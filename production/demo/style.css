@@ -1,0 +1,43 @@
+body{
+  background: #FFE4B5;
+}
+.container {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  max-width: 730px;
+  background-color: #FFFAFA;
+  border-radius: 10px;
+  border: 1px solid black;
+}
+
+h1, h2, h3 {
+  font-family: sans-serif;
+}
+
+h2 {
+  margin: .5em 0 .2em;
+  padding: 0;
+}
+
+textarea {
+  height: 6em;
+  width: 100%;
+  display: block;
+  -webkit-appearance: none;
+  padding: .3em;
+  font-family: monospace;
+}
+
+.group {
+  padding: 1em;
+}
+.result {
+  padding: 1em;
+  border: 1px solid #eee;
+  margin-bottom: 2em;
+  overflow: auto;
+}
+
+.dark {
+  background: #333;
+}
