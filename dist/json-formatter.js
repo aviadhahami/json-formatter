@@ -57,6 +57,11 @@ angular.module('jsonFormatter', ['RecursionHelper'])
       }
     };
     scope.type = getType(scope.json);
+      
+    ///MODIFICATIONS BASED ON CLASS
+      
+      
+    //END MODIFICATIONS
     scope.hasKey = typeof scope.key !== 'undefined';
     scope.getConstructorName = function(){
       return getObjectName(scope.json);
