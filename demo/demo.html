@@ -17,14 +17,17 @@
 <body ng-controller="MainCtrl">
     <div class="container">
         <div class="header">
-            <h1 class="text-muted">&lt;ClickTale - EA Json Formatter&gt;</h1>
+            <h1 class="text-muted">&lt;Element Addressing JSON Formatter&gt;</h1>
+             <h6> Input: </h6>
+            <textarea ng-model="textarea" placeholder="{{ taPlaceHolder }}"></textarea>
 
-            <div class="tests">
-                <div class="result dark">
-                    <json-formatter json="complex" open="1" class="json-formatter-dark"></json-formatter>
-                </div>
+            <br />
+            <h6> results: </h6>
+            <div class="result dark">
+                <json-formatter json="complex" open="1" class="json-formatter-dark"></json-formatter>
             </div>
-            <textarea ng-model="textarea"></textarea>
+
+
 
         </div>
     </div>
