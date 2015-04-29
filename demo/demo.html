@@ -20,15 +20,17 @@
 
 <body ng-controller="MainCtrl">
     <div class="container">
+       
         <div class="header">
             <h1 class="text-muted">&lt;Element Addressing JSON Formatter&gt;</h1>
+             <input type="checkbox" ng-model="colorCheck" /> Toggle JSON color
             <h6> Input: </h6>
             <textarea ng-model="textarea" placeholder="{{ taPlaceHolder }}"></textarea>
 
             <br />
             <h6> results: </h6>
-            <div class="result dark">
-                <json-formatter json="complex" open="1" class="json-formatter-dark"></json-formatter>
+            <div class="{{ viewType }}">
+                <json-formatter json="complex" open="1" class="{{ viewClass }}"></json-formatter>
             </div>
 
         </div>
