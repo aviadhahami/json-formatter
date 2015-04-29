@@ -1,7 +1,12 @@
 body{
+  padding: 0;
+  margin: 0;
   background: #FFE4B5;
   font-family: 'Raleway', sans-serif;
   font-weight: 500;
+}
+.logo{
+  padding: 1%;
 }
 .container {
   margin-top: 5%;
