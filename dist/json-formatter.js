@@ -77,9 +77,8 @@ angular.module('jsonFormatter', ['RecursionHelper'])
                     '2722': 'button',
                     '2884': 'div',
                     '3124': 'textarea'
-
                 };
-                console.log(object);
+                //console.log(object);
                 return elements[object];
             }
 
