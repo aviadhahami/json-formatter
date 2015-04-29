@@ -2,18 +2,15 @@
 
 
 JSON Formatter is an AngularJS directive for rendering JSON objects in HTML with a **collapsible** navigation.
+This is a private build of mine for my own puposes. Should not serve you
 
 [![Screebshot](./screenshot.png)](http://azimi.me/json-formatter/demo/demo.html)
 
 ## Usage
 You shouldn't be using this...
 
-## Demo
-See [Examples here](http://azimi.me/json-formatter/demo/demo.html) 
-
-
-## Browser Support
-All modern browsers are supported. Lowest supported version of Internet Explorer is **IE9**.
+## Thank you!
+For @mohsen1 for his original build.This is forked from him
 
 ## License
 
