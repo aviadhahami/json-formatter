@@ -1,8 +1,6 @@
 var app = angular.module('demo', ['ngSanitize', 'jsonFormatter']);
 
 app.controller('MainCtrl', function($scope) {
-    $scope.undef = undefined;
-    $scope.textarea = '{}';
     $scope.complex = {
 
         "links": {
