@@ -8,7 +8,11 @@
     <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.18/angular.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.18/angular-sanitize.js"></script>
     <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.css">
-
+    <!-- COME HERE JQ! -->
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <!-- END OF JQ! -->
     <link rel="stylesheet" href="../dist/json-formatter.min.css">
     </div>
     <link rel="stylesheet" href="demo.css">
@@ -18,7 +22,7 @@
     <div class="container">
         <div class="header">
             <h1 class="text-muted">&lt;Element Addressing JSON Formatter&gt;</h1>
-             <h6> Input: </h6>
+            <h6> Input: </h6>
             <textarea ng-model="textarea" placeholder="{{ taPlaceHolder }}"></textarea>
 
             <br />
@@ -27,12 +31,21 @@
                 <json-formatter json="complex" open="1" class="json-formatter-dark"></json-formatter>
             </div>
 
-
-
         </div>
     </div>
     <script src="../dist/json-formatter.js"></script>
     <script src="demo.js"></script>
+    <script>
+        $(document).ready(function() {
+            //$(document).tooltip();
+            $(document).tooltip({
+                position: {
+                    my: "left+15 center",
+                    at: "right center"
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>

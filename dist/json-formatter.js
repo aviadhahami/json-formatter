@@ -36,7 +36,59 @@ angular.module('jsonFormatter', ['RecursionHelper'])
             }
 
             function getFromElementAddressingList(object) {
+                //some kind of enum
+/*                1	a	+	
+2	b	+	
+7	g   +
+16	p +
+36	dd	+	
+52	td --
+76	li	+	
+100	dl ++
+111	ol	+	
+115	small +
+117	ul	  +
+136	h1,h2,h3 ++	
+138	h4,h5 (,h6 - 168?) ++
+147	span +	
+148	tr -		
+268	label +
+276	table -	
+582	fieldset +
+610	body ? -
+641	area +		
+873	img	++	
+947	svg +
+1134	noindex +
+1587	select	+	
+1795	canvas +
+1812	tbody	-	
+1827	center	+	
+2061	map		+
+2153	input	+	
+2323	script -
+2345	iframe +
+2371	circle +
+2406	form +
+2414	noscript -
+2605	meta	-
+2703	option (?) -
+2722	button	+	
+2884	div +
+3124	textarea +*/	
+    var elements = {
+'2' : 'b',
+    '7' : 'g',
+        '16' : 'p',
+            '36' : 'dd',
+              '52'	: 'td',
+        '76' : 'li',
+        '100' : 'dl',
+        '111' : 'ol',
+        '115' : 'small',
+        '117' : 'ul',
 
+            };
                 console.log(object);
                 return 'my title';
             }
