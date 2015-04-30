@@ -3,12 +3,13 @@
 
 <head>
     <meta charset="utf-8">
+    <link rel="shortcut icon" href="http://4.bp.blogspot.com/-edpo_jrj_B0/T91T1XEw6PI/AAAAAAAABk8/od7qhkHSFRQ/s1600/json160.gif">
     <title>ClickTale - EA Json Formatter</title>
-      <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.css">
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.css">
 
     <!-- COME HERE JQ! -->
     <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
-  
+
     <!-- END OF JQ! -->
     <link rel="stylesheet" href="js/json-formatter.min.css">
     <link href='http://fonts.googleapis.com/css?family=Raleway:500,300' rel='stylesheet' type='text/css'>
@@ -25,22 +26,22 @@
         <div class="header">
             <h1 class="text-muted" style="text-align:center;">&lt;Element Addressing JSON Formatter&gt;</h1>
             <div ng-show="mainContent">
-               <input type="checkbox" ng-model="colorCheck" /> Toggle JSON color
-               &nbsp;
-               <button ng-click="mainContentChanger()"> what is this?</button>
-               <h6> Input: </h6>
-               <textarea ng-model="textarea" placeholder="{{ taPlaceHolder }}"></textarea>
+             <input type="checkbox" ng-model="colorCheck" /> Toggle JSON color
+             &nbsp;
+             <button ng-click="mainContentChanger()"> what is this?</button>
+             <h6> Input: </h6>
+             <textarea ng-model="textarea" placeholder="{{ taPlaceHolder }}"></textarea>
 
-               <br />
-               <h6> results: </h6>
-               <div class="{{ viewType }}">
+             <br />
+             <h6> results: </h6>
+             <div class="{{ viewType }}">
                 <json-formatter json="complex" open="1" class="{{ viewClass }}"></json-formatter>
             </div>
         </div>
         <div ng-show="!mainContent">
-         <button ng-click="mainContentChanger()"> back</button>
-         <hr />
-         <h4> This is a custom made JSON viewer for us to use. <br />
+           <button ng-click="mainContentChanger()"> back</button>
+           <hr />
+           <h4> This is a custom made JSON viewer for us to use. <br />
             It will show a <b><i>tooltip</i></b> per number and will reveal what element the number refers to in the Element Adressing system <br />
             Pretty simple.
         </h4>
@@ -53,10 +54,10 @@
     </div>
 </div>
 </div>
-  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.18/angular.js"></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.18/angular-sanitize.js"></script>
-      <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
-    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.18/angular.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.18/angular-sanitize.js"></script>
+<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+<script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
 <script src="js/json-formatter.js"></script>
 <script src="model.js"></script>
 <script>
